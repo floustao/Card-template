@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import CardBackground from './CardBackground';
 import Character from '../assets/image-victor.jpg';
 
-const CARD_WIDTH = '19rem';
 const CARD_BORDER_RADIUS = '1rem';
 
 export default function Card({ characterInfo = {}, socialMediaInfo = [] }) {
@@ -39,21 +38,29 @@ export default function Card({ characterInfo = {}, socialMediaInfo = [] }) {
 }
 
 const OuterContainer = styled.div`
-	border-radius: ${CARD_BORDER_RADIUS};
-	width: ${CARD_WIDTH};
+	max-width: 19rem;
+	min-width: 12.5rem;
 	position: relative;
-	box-shadow: var(--bs);
-	background-color: var(--white);
+
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	box-shadow: var(--bs);
+	background-color: var(--white);
+	border-radius: ${CARD_BORDER_RADIUS};
 `;
 
 const Banner = styled(CardBackground)`
 	&.background {
 		width: 100%;
-		border-radius: 0.5rem 0.5rem 0 0;
+		border-radius: ${CARD_BORDER_RADIUS} ${CARD_BORDER_RADIUS} 0 0;
 	}
 `;
 
@@ -61,7 +68,6 @@ const Avatar = styled.img`
 	border-radius: 50%;
 	border: 0.25rem solid var(--white);
 	position: absolute;
-	left: calc((${CARD_WIDTH} - 6.5rem) / 2);
 	top: 5rem;
 `;
 
@@ -98,6 +104,7 @@ const City = styled.p`
 `;
 
 const Footer = styled.div`
+	width: 100%;
 	border-top: 1px solid var(--grey);
 	display: flex;
 	justify-content: space-evenly;
