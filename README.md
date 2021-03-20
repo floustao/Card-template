@@ -3,7 +3,10 @@
 Quick card template built using react, styled-components and flexbox.
 It's hosted on Netlify at: https://infallible-morse-813509.netlify.app/
 
-# Goal
+## Comparison vs mockup
+![Design comparison](https://user-images.githubusercontent.com/25415107/111885910-c8f4aa80-8987-11eb-9024-a7d3eb335cdc.gif)
+
+## Goal
 
 Just for fun and to try this quick challenge:
 https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ
