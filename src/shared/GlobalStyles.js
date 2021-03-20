@@ -2,10 +2,10 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   body {
-    font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
     padding: 0;
     margin: 0;
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: var(--lineHeight);
     background: var(--white);
     color: var(--black);
@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
     --black: #000;
     --white: #fff;
     --violet: #bd10e0;
-    --blue: #4a90e2;
+    --blue: #2caab7ab;
     --turquoise: #50e3c2;
     --lightGreen: #b8e986;
     --green: #7ed321;
@@ -24,7 +24,7 @@ const GlobalStyles = createGlobalStyle`
     --orange: #f5a623;
     --grey: #9b9b9b;
     --gray: var(--grey);
-    --bs: 0 10px 20px 0 rgba(0,0,0,0,0.9);
+    --bs: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     --maxWidth: 90vw;
     --lineHeight: 1rem;
     box-sizing: border-box;
